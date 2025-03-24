@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    padding: 3%;
+    background-color: rgb(194, 218, 226);
+    
+    
+}
+
+header{
+    text-align: center;
+    margin-bottom: 2em;
+    
+
+    
+}
+
+
+
+.container{
+    padding: 1%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.box1{
+    width:47% ;
+    height:auto;
+    background-color: rgb(102, 174, 233) ;
+    padding: 3%;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: width 2s;
+
+}
+
+.phoneHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.phoneHeader img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+.box1 h2{
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.box1 p {
+    font-size: 0.9em;
+    line-height: 1.8;
+    
+}
+
+.phoneHeader-item p{
+    font-size: 1em;
+    margin-bottom: 0.8em;
+    font-weight: bolder;
+}
+
+
+
+.box1:hover{
+    background-color: rgb(46, 46, 124);
+    color:white;
+    width: 40%;
+    
+}
+
+.box1 button {
+    border: 0;
+    margin-top: 1.5rem;
+    height: 2rem;
+    width: 6rem;
+    border-radius:10px;
+    background-color: white;
+    color:black;
+    
+}
+
+.box1 button:hover{
+    background-color: black;
+    color:white;
+}
+
+
+@media  only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .box1{
+        padding: 5%;
+        width:55%;
+    }
+
+    .phoneHeader {
+        display: flex;
+      flex-direction: column;
+    }   
+}

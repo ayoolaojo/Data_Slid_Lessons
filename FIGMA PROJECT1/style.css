@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --bg: #f5efe6;
+  --green: #5a7554;
+  --black: #030303;
+  --white: #ffffff;
+  --inter: Inter;
+  --nunito: Nunito;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  height: 88px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 40px;
+}
+
+nav img {
+  width: 169px;
+  height: 48px;
+  object-fit: contain;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+nav ul li {
+  font-family: var(--inter);
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--green);
+  list-style: none;
+}
+
+nav button {
+  height: 35px;
+  width: 103px;
+  border-radius: 24px;
+  background-color: var(--green);
+  border: 0;
+  color: var(--white);
+  font-family: var(--inter);
+  font-weight: 500;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding: 8px 16px;
+}
+
+main {
+  flex: 1;
+}
+
+main .section-1 {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+
+.section-1 .box-1 {
+  flex: 1;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-1 .box-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.box-1 .find-inner {
+  font-family: var(--nunito);
+  line-height: 100%;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 0%;
+  color: var(--black);
+}
+
+.box-1 .find-relax {
+  font-family: var(--nunito);
+  line-height: 100%;
+  font-size: 2.25rem;
+  font-weight: 500;
+  letter-spacing: 0%;
+  color: var(--black);
+}
+
+.box-1 .find-inner span {
+  color: var(--green);
+}
+
+.section-1 .box-1 button {
+  width: 188px;
+  height: 48px;
+  /* padding: 8px 0px; */
+  border: none;
+  background-color: var(--green);
+  border-radius: 24px;
+  font-family: var(--nunito);
+  font-size: 1rem;
+  line-height: 100%;
+  font-weight: 500;
+  color: var(--white);
+  letter-spacing: 0%;
+}
+
+main #section-2 {
+  width: 100%;
+  height: 47rem;
+  background-color: white;
+  padding: 25px;
+}
+
+main #section-2 h1 {
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+main #section-2 .container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+
+main .container-item {
+  flex: 1;
+  background-color: aqua;
+  height: 70vh;
+}
+
+main .container-item img {
+  height: 650px;
+  width: 100%;
+}
