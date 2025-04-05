@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  height: 400px;
+  width: 100%;
+  background-color: green;
+  grid-template-columns: repeat(2, 1fr) repeat(2, 50px);
+  gap: 20px;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-container div {
+  background-color: red;
+}
+
+.grid-container div:nth-child(5) {
+  background-color: yellow;
+  grid-column: 4;
+  grid-row: 2;
+}

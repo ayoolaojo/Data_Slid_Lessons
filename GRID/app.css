@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  display: grid;
+  /* background-color: green; */
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 50px 1fr 100px;
+
+  height: 100vh;
+}
+
+nav {
+  background-color: aqua;
+  grid-column: span 2;
+}
+
+aside {
+  background-color: black;
+  grid-column: 1;
+  grid-row: span 3;
+}
+
+main {
+  background-color: brown;
+}
+
+footer {
+  background-color: blue;
+}
